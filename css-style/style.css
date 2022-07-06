@@ -1,0 +1,276 @@
+*
+{
+    box-sizing: border-box;
+}
+:root
+{
+    --main-text-width:1.5rem;
+    --main-pragraph-style: gray;
+    --main-color:#0078ff ;
+}
+body
+{
+    background-color: #eee;
+}
+
+/* nav */
+.nav-item
+{
+    margin: 0 5px 0 5px;
+    font-weight: bolder;
+}
+/* header */
+header
+{
+    background-image: url(../images/intro-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header-content
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header h1
+{
+    font-size: 5rem;
+}
+header p::after
+{
+    content: "|";
+    animation-name: typing ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+@keyframes typing
+{
+    0%{ content: "|";}
+    3%{ content: "D|";}
+    6%{ content: "De|";}
+    9%{ content: "Des|";}
+    12%{ content: "Desi|";}
+    15%{ content: "Desig|";}
+    18%{ content: "Design|";}
+    21%{ content: "Designe|";}
+    27%{ content: "Designer |";}
+    30%{ content: "Designe|";}
+    33%{ content: "Design|";}
+    36%{ content: "Desig|";}
+    39%{ content: "Desi|";}
+    42%{ content: "Des|";}
+    45%{ content: "De|";}
+    48%{ content: "D|";}
+    51%{ content: "De|";}
+    54%{ content: "Dev|";}
+    58%{ content: "Deve|";}
+    61%{ content: "Devel|";}
+    64%{ content: "Develo|";}
+    67%{ content: "Develop|";}
+    72%{ content: "Develope|";}
+    76%{ content: "Developer |";}
+    79%{ content: "Develope|";}
+    82%{ content: "Develop|";}
+    85%{ content: "Develo|";}
+    88%{ content: "Devel|";}
+    91%{ content: "Deve|";}
+    94%{ content: "Dev|";}
+    97%{ content: "De|";}
+    100%{ content: "D|";}
+}
+/*section-one*/
+
+.section-one-info .title
+{
+    font-weight: bolder;
+}
+
+.h2f
+{
+    position: relative;
+}
+.h2f::after
+{
+    content:x;
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    width: 2px;
+    height: 2px;
+    background-color:var(--main-color);
+}
+/* section-tow */
+.section-tow .icon
+{
+    width: 7rem;
+    height: 7rem;
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 3rem;
+    border:var(--main-color) 10px solid;
+    border-radius: 50%;
+    transition : .5s;
+}
+.section-tow .icon:hover
+{
+    background-color:var(--main-color) ;
+    color: white;
+    border-color:#eee ;
+}
+.section-tow h2
+{
+    font-size: var(--main-text-width);
+}
+.section-tow p
+{
+    color: var(--main-pragraph-style);
+}
+/* statistics  */
+.statistics 
+{
+    width: 100%;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-image: url(../images/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.lay
+{
+    background-color: #0077ffb0;
+    padding: 100px 0;
+}
+.statistics .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.count
+{
+    text-align: center;
+    color: white;
+}
+.count-icon
+{
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    font-size: 2rem;
+    border:white 10px solid;
+    border-radius: 50%;
+    transition : .5s;
+}
+/* section-three */
+.carousel-img img{
+
+}
+.section-three img
+{
+    transition: transform 1s;
+}
+.section-three img:hover
+{
+    transform: scale(1.5);
+}
+.section-three .overs
+{
+    overflow: hidden;
+}
+.section-three .card-body
+{
+    overflow: hidden;
+}
+.littel
+{
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    width: 30px;
+    height: 30px;
+}
+/* section-four */
+.blog-a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.over
+{
+    width:fit-content;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+.bord-a
+{
+    text-decoration: none;
+    color: gray;
+}
+.bord
+{
+    border-top: 1px solid rgba(128, 128, 128, 0.534);
+}
+.img-icon
+{
+    width: 50px;
+    height: 50px;
+}
+/* slider */
+.sliderback
+{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+.slider-lay
+{
+    background-color: #0077ffb0;
+    size: 100% 100%;
+    height: 100%;
+}
+/* form */
+.form-icon
+{
+    width: 30px;
+    height: 30px;
+    border: solid 3px var(--main-color);
+}
+.form-iconn{
+    color: var(--main-color);
+}
+form{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+.form-lay
+{
+    background-color: #0077ffb0;
+    size: 100% 100%;
+}
+/* footer */
+footer
+{
+    background-color:#0062D3;
+}
+/* line */
+.line
+{
+    width: 3rem;
+    height: 5px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+.line-one
+{
+    width: 5rem;
+    height: 2px;
+    text-align: center;
+    background-color: var(--main-color);
+}
